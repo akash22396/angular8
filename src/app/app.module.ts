@@ -17,6 +17,9 @@ import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdwnDirective } from './shared/dropdwn.directive';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { GalleryComponent } from './gallery/gallery.component';
+import { AddImgComponent } from './gallery/add-img/add-img.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
     AboutComponent,
     DropdwnDirective,
     DropdownDirective,
+    GalleryComponent,
+    AddImgComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
