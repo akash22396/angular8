@@ -4,15 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
-    apiKey: 'AIzaSyAz48GLT2clTK82ZOS1a9Chqcd2hyDNJow',
-    authDomain: 'ng-akash-work.firebaseapp.com',
-    databaseURL: 'https://ng-akash-work.firebaseio.com',
-    projectId: 'ng-akash-work',
-    storageBucket: 'ng-akash-work.appspot.com',
-    messagingSenderId: '675252752395',
-    appId: '1:675252752395:web:f8ed5f7be50b7440'
-  }
+  
 
 };
 
