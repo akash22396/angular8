@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AngularFireModule} from '@angular/fire';
+import { AngularFireStorageModule} from '@angular/fire/storage';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +23,9 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AddImgComponent } from './gallery/add-img/add-img.component';
 import { ErrorComponent } from './error/error.component';
+import { environment } from 'src/environments/environment';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -45,6 +51,11 @@ import { ErrorComponent } from './error/error.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+     FormsModule,
+     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

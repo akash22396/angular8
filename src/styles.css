@@ -85,15 +85,18 @@ Home Page
 
 .About {
     height: 500px;
+    overflow: hidden;
 }
 
-.about-img {
-    width: 60%;
-    float: right;
-    height: 500px;
-    background: url('assets/img/bg-about.jpg');
-    border-left: 200px solid white;
-    border-top: 500px solid transparent;
+@media screen and (min-width: 768px) {
+    .about-img {
+        width: 60%;
+        float: right;
+        height: 500px;
+        background: url('assets/img/bg-about.jpg');
+        border-left: 200px solid white;
+        border-top: 500px solid transparent;
+    }
 }
 
 
@@ -106,7 +109,7 @@ Home Page
 
 
 /*===============================
-Parallex 
+Parallex
 ================================*/
 
 .bg-parllex {
