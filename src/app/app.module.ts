@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule} from '@angular/fire';
 import { AngularFireStorageModule} from '@angular/fire/storage';
 import { AngularFireDatabaseModule} from '@angular/fire/database';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -51,6 +52,7 @@ import { from } from 'rxjs';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    OwlModule ,
      FormsModule,
      ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),

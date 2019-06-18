@@ -110,13 +110,19 @@
         <div class="testimonials-box">
             <div class="testimonial-content">
                 <div class="container-fluid p-5">
-                    <div class="row">
-                        <div class="col-md-3" *ngFor='let alb of albums | slice : 0:4'>
-                            <div class='bg-white p-2'>
-                                <img class='img-fluid w-100' src='{{alb.thumbnailUrl}}'>
+                    <h3 class="main-heading text-uppercase text-center  pb-2 ">Products</h3>
+                    <div class="heading-devider heading-devider-center"></div>
+                    <div class="row py-4">
+                        <div class="col-md-3 mt-3" *ngFor='let alb of albums | slice : 0:4'>
+                            <div class='bg-white p-2 product-box1 '>
+                                <div class='img-box'>
+                                    <img class='img-fluid w-100 ' src='{{alb.thumbnailUrl}}'>
+                                    <div class='caption-me'>test</div>
+                                </div>
+
                                 <h3 class='text-center'>
-                                    <a routerLink='/Product/{{alb.id}}'>
-                                  {{alb.title}}</a>
+                                    <a routerLink='/Product/{{alb.id}}' class='nav-link'>
+                                      {{alb.title}}</a>
                                 </h3>
 
                             </div>
@@ -126,5 +132,24 @@
 
             </div>
         </div>
+    </div>
+</section>
+<section>
+    <div class="container py-5">
+        <h3 class="main-heading text-uppercase text-center  pb-2">Teams</h3>
+        <div class="heading-devider heading-devider-center"></div>
+        <div class=" py-4">
+            <div class="">
+                <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                    <div class="item" *ngFor="let image of images;let i= index">
+                        <img class="slide-image img-fluid" src="{{image.image}}">
+                        <div class="slide-text">
+                            <h4>{{image.text}}</h4>
+                        </div>
+                    </div>
+                </owl-carousel>
+            </div>
+        </div>
+
     </div>
 </section>

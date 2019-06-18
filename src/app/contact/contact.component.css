@@ -1,0 +1,11 @@
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control:active {
+    outline: 1px solid rgba(0, 89, 255, 0.623);
+}
+
+.form-control:focus {
+    outline: 1px solid rgba(0, 89, 255, 0.623);
+}
